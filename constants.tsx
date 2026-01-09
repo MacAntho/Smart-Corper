@@ -193,9 +193,8 @@ export const NYSC_STAGES: Stage[] = [
       'Collaborate with fellow corpers on group projects.'
     ],
     donts: [
-      'Do not sign for others in the attendance register.',
-      'Do not skip CDS as it affects your final clearance.',
-      'Avoid illegal fundraising for projects.'
+      'Do not forge signatures on your CDS attendance card.',
+      'Do not skip weekly CDS meetings without official leave.'
     ],
     mistakes: [
       { title: 'Forging Signature', explanation: 'If caught, you face severe disciplinary action.' },
@@ -311,15 +310,45 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'a2',
     slug: 'understanding-nysc-bye-laws',
-    title: 'Decoding the NYSC Bye-Laws (2024 Edition)',
+    title: 'Decoding the NYSC Bye-Laws (2023 Edition)',
     category: 'Penalties',
     readTime: '12 min',
     riskLevel: 'High',
     views: 8432,
-    lastVerifiedDate: new Date('2024-01-05'),
-    source: 'NYSC Official Handbook',
-    excerpt: 'Know your rights and the rules that can lead to a service extension. This is mandatory reading for every corper.',
-    body: `<h2 id="conduct">Code of Conduct</h2><p>The NYSC Bye-Laws are the legal framework of your service year. Ignorance of these rules is not an excuse at the Zonal office.</p><h3>Key Offenses</h3><ul><li><strong>Unauthorized Travel:</strong> Leaving your state without a signed exit permit from the State Coordinator. Penalty: Extension of service (usually 2-4 weeks).</li><li><strong>Ghosting:</strong> Not reporting to PPA but collecting allowance. Penalty: Complete cancellation of service year and prosecution.</li></ul>`
+    lastVerifiedDate: new Date('2023-11-15'),
+    source: 'NYSC Official Handbook & Section 16(2) NYSC Act',
+    excerpt: 'The primary operational guidelines for NYSC. Learn about the Code of Conduct, prohibited alterations, and specific penalties for misconduct.',
+    body: `
+      <p>The <strong>NYSC Bye-Laws</strong> function as the primary operational guidelines for the National Youth Service Corps, derived from the authority granted to the Directorate under <strong>Section 16(2) of the NYSC Act</strong>. While the NYSC Act is the broad enabling legislation, the Bye-Laws provide the specific <strong>Code of Conduct</strong> and administrative rules that govern the daily life of a corps member.</p>
+
+      <h2 id="legal-standing">1. Legal Standing and Administration</h2>
+      <p>The Bye-Laws are issued to every corps member upon enrollment to ensure proper administration of the scheme. These laws are not static; proposed <strong>amendments to the 1993 NYSC Bye-Laws</strong> are currently undergoing a review process that requires necessary action from the Presidency. To ensure compliance, the scheme organizes <strong>mandatory lectures</strong> on both the Act and the Bye-Laws during the 21-day orientation course.</p>
+
+      <h2 id="core-components">2. Core Components of the Bye-Laws</h2>
+      <p>The Bye-Laws decode the expectations of the scheme across several critical areas:</p>
+      <ul>
+        <li><strong>Ethos and Identity:</strong> They establish the <strong>NYSC Motto ("Service and Humility")</strong>, the National Pledge, and regulations regarding the use of <strong>Identity Cards</strong>.</li>
+        <li><strong>Conduct and Mobility:</strong> The laws strictly prohibit <strong>unauthorized journeys</strong> outside the state of deployment and outline the procedures for a formal <strong>Leave of Absence</strong>.</li>
+        <li><strong>Welfare and Life Events:</strong> They provide framework for <strong>medical provisions</strong> and specific protocols for <strong>Maternity Leave</strong> during the service year.</li>
+        <li><strong>Administrative Communication:</strong> They dictate the <strong>official channels of communication</strong> through which a member must engage the hierarchy, such as through Local Government Inspectors (LGI).</li>
+      </ul>
+
+      <h2 id="discipline-penalties">3. Discipline and Penalties</h2>
+      <p>The Bye-Laws are the primary tool for maintaining order, with specific penalties enumerated in clauses such as <strong>3(2) and 10(2j)</strong>.</p>
+      <ul>
+        <li><strong>Absenteeism:</strong> Frequent missing of <strong>Community Development Service (CDS) meetings</strong> or failing to attend the <strong>monthly clearance</strong> can lead to sanctions, including the withholding of allowances or a formal <strong>extension of service</strong>.</li>
+        <li><strong>Serious Misconduct:</strong> Engaging in <strong>political activities</strong> is strictly prohibited and can lead to expulsion.</li>
+        <li><strong>Abscondment:</strong> Members who leave their station without permission are declared <strong>deserters</strong>, which may result in the denial of their Certificate of National Service.</li>
+      </ul>
+
+      <h2 id="dress-code">4. Strict Dress Code Regulations</h2>
+      <p>A significant portion of the Bye-Laws is dedicated to the <strong>NYSC Dress Code</strong>, which is maintained to promote decency and national unity regardless of ethnic or religious background.</p>
+      <ul>
+        <li><strong>Prohibited Alterations:</strong> Corps members are forbidden from <strong>"slim-fitting" khaki trousers</strong>, creating crop tops, or wearing three-quarter shorts.</li>
+        <li><strong>Religious Considerations:</strong> While the <strong>hijab</strong> is permitted for Muslim female members, it must be worn in a manner that does not deface the official uniform. The use of <strong>skirts or gowns</strong> during drills is strictly prohibited.</li>
+        <li><strong>Sanctions:</strong> Defacing or abusing the uniform is considered an affront to constituted authority and can lead to a member being <strong>de-kitted and decamped</strong>, as was the case for members in Ebonyi State in 2019.</li>
+      </ul>
+    `
   },
   {
     id: 'a3',
@@ -331,32 +360,94 @@ export const MOCK_ARTICLES: Article[] = [
     views: 6420,
     lastVerifiedDate: new Date('2024-08-01'),
     source: 'NYSC Act & 2024 Minimum Wage Directives',
-    excerpt: 'A comprehensive guide to your financial entitlements (including the ₦77k allowance), healthcare coverage, and legal protections.',
+    excerpt: 'A complete breakdown of your ₦77,000 allowance, NHIA healthcare coverage, housing rights at your PPA, and the legal protections afforded by the NYSC Act.',
     body: `
-      <p>The NYSC Act and its accompanying Bye-Laws establish a framework of financial entitlements and legal protections.</p>
+      <p>The National Youth Service Corps (NYSC) Act and its accompanying Bye-Laws establish a comprehensive framework of financial entitlements and legal protections designed to support corps members during their mandatory service year.</p>
+
       <h2 id="allawee">Federal and State Allowances (Allawee)</h2>
       <ul>
-        <li><strong>Federal Monthly Allowance:</strong> <strong>₦77,000</strong> following the 2024 approval.</li>
-        <li><strong>Payment Schedule:</strong> Typically disbursed between the 25th and 30th.</li>
+        <li><strong>Federal Monthly Allowance:</strong> Following the 2024 national minimum wage increase, the Federal Government approved a monthly stipend of <strong>₦77,000</strong> for all serving corps members. This is a significant increase from previous rates of ₦33,000 and ₦19,800.</li>
+        <li><strong>Payment Schedule:</strong> Allowances are typically disbursed between the <strong>25th and 30th of every month</strong>, provided the member has successfully completed the mandatory <strong>monthly biometric and physical clearance</strong>.</li>
+        <li><strong>Non-Regular Allowances:</strong> During the three-week orientation course, members are entitled to "Non-Regular Allowances," which include <strong>transport and bicycle allowances</strong>, as well as a feeding stipend—specifically cited as <strong>₦3,000</strong> in some contexts to assist in reaching the Place of Primary Assignment (PPA).</li>
+        <li><strong>State and Local Stipends:</strong> State governments are statutorily required to provide a minimum annual subvention of <strong>₦500,000</strong> to their respective NYSC Governing Boards to cater to member welfare. Specific states provide additional monthly stipends, such as <strong>Akwa Ibom and Bayelsa</strong>, which both offer <strong>₦5,000</strong> monthly.</li>
+      </ul>
+
+      <h2 id="health-safety">Statutory Rights to Health and Safety</h2>
+      <ul>
+        <li><strong>Healthcare Coverage:</strong> All corps members are enrolled in the <strong>National Health Insurance Authority (NHIA)</strong> through the Group Individual Family Social Health Insurance Programme (GIFSHIP-N). This entitles members to <strong>free medical care</strong> at approved hospitals throughout the service year.</li>
+        <li><strong>Medical Refunds:</strong> The Scheme maintains a policy of <strong>reimbursing properly certified medical bills</strong> incurred by members during their service.</li>
+        <li><strong>Security Protections:</strong> Ensuring the <strong>security of lives and property</strong> is a statutory responsibility shared by the Federal, State, and Local governments. Members have access to a <strong>24-hour Distress Call Centre</strong> to report safety concerns.</li>
+        <li><strong>Insurance Benefits:</strong> The NYSC provides life insurance; incapacitated ex-corps members have received benefits up to <strong>₦1,000,000</strong>, and the families of deceased members are entitled to death benefits processed by the scheme's underwriters.</li>
+      </ul>
+
+      <h2 id="ppa-rights">Rights in the Workplace (PPA)</h2>
+      <ul>
+        <li><strong>Employer Obligations:</strong> Under <strong>Section 13(2) of the NYSC Act</strong>, employers are required to provide <strong>habitable accommodation</strong> or pay a minimum of <strong>₦250 per month in lieu</strong>. They must also provide transport or a minimum of <strong>₦150 per month</strong> where transport is not available.</li>
+        <li><strong>Harassment-Free Environment:</strong> Every corps member has a statutory right to work in a <strong>respectful and harassment-free environment</strong>. The NYSC maintains a strict "zero tolerance" policy for sexual harassment, and members have the right to choose between formal or informal dispute resolution mechanisms.</li>
+        <li><strong>Professional Protection:</strong> Members are covered under the <strong>Public Officers Protection Act</strong> for the duration of their service year.</li>
+      </ul>
+
+      <h2 id="legal-admin">Legal and Administrative Rights</h2>
+      <ul>
+        <li><strong>Legal Aid:</strong> Through the <strong>Corps Legal Aid Scheme (CLAS)</strong>, corps lawyers provide free legal services to indigent members of society and can assist fellow members in understanding their own <strong>civic rights and responsibilities</strong>.</li>
+        <li><strong>Leave and Vacation:</strong> Members are entitled to <strong>three weeks of terminal leave</strong> before their final passing-out ceremony.</li>
+        <li><strong>Right of Appeal:</strong> Any member aggrieved by a decision made by the NYSC Directorate has the <strong>right to appeal to the Presidency</strong>.</li>
       </ul>
     `
   },
   {
     id: 'a4',
-    slug: 'top-10-mistakes-corps-members-make',
-    title: 'Top 10 Mistakes Corps Members Make During Service',
+    slug: '10-mistakes-corps-members-make',
+    title: '10 Mistakes Corps Members Make During Service',
     category: 'Penalties',
     readTime: '10 min',
     riskLevel: 'High',
-    views: 456,
-    lastVerifiedDate: new Date('2024-06-25'),
-    source: 'NYSC Official Handbook & Directives',
-    excerpt: 'A critical guide on the 10 most common errors that lead to service extensions, penalties, or disqualification.',
+    views: 12456,
+    lastVerifiedDate: new Date('2024-08-28'),
+    source: 'NYSC Official Handbook & Field Inspectorate Manual',
+    excerpt: 'Critical guide on the 10 most common errors that lead to service extensions, penalties, or disqualification based on official sources.',
     body: `
-      <h2 id="fake-credentials">1. Presentation of Fake Credentials</h2>
-      <p>Forging documents leads to expulsion and prosecution.</p>
+      <p>Based on the sources provided, here are the top 10 most critical mistakes corps members make that lead to penalties, extensions, or disqualification, along with how to avoid them.</p>
+
+      <h2 id="fake-credentials">1. Presentation of Fake Credentials or Certificates</h2>
+      <p><strong>Why it happens:</strong> Unqualified persons, or those from unaccredited institutions, attempt to enlist in the service to gain the benefits of the certificate.</p>
+      <p><strong>How to avoid it:</strong> Ensure your degree is from an accredited Corps Producing Institution (CPI) and present only original documents during camp registration. Forging documents is a criminal offense that leads to expulsion and possible prosecution under the NYSC Act.</p>
+
       <h2 id="age-falsification">2. Falsification of Age</h2>
-      <p>NYSC uses WAEC PIN and NIMC linkage to detect fraudulent changes.</p>
+      <p><strong>Why it happens:</strong> Graduates over the age of 30 often manipulate their Date of Birth (DOB) on the portal to remain eligible for mobilization rather than receiving an Exemption Certificate.</p>
+      <p><strong>How to avoid it:</strong> Be honest during registration. The NYSC uses a WAEC PIN system and links with the National Identity Management Commission (NIMC) to detect fraudulent changes in birth dates.</p>
+
+      <h2 id="absconding">3. Absconding from Service</h2>
+      <p><strong>Why it happens:</strong> Frustration from being rejected by a Place of Primary Assignment (PPA) or a personal lack of commitment leads some members to leave their state of deployment without permission.</p>
+      <p><strong>How to avoid it:</strong> If a PPA rejects you, report immediately to your Local Government Inspector (LGI) for reposting. Leaving without authorization will result in being declared a deserter, which carries severe disciplinary actions and the denial of a discharge certificate.</p>
+
+      <h2 id="unauthorized-travel">4. Unauthorized Inter-State Travel</h2>
+      <p><strong>Why it happens:</strong> Members often travel for social events or family visits without following the official protocol for leaving their duty station.</p>
+      <p><strong>How to avoid it:</strong> You must obtain a formal travel permit from your LGI before crossing state lines. Traveling without permission can lead to an extension of service as a penalty.</p>
+
+      <h2 id="dress-code">5. Violation of the Official Dress Code</h2>
+      <p><strong>Why it happens:</strong> Members often "slim-fit" or "shape" their khaki trousers, or substitute skirts for trousers based on religious or fashion preferences.</p>
+      <p><strong>How to avoid it:</strong> Adhere strictly to the officially sanctioned kit. Altering the uniform is considered an affront to constituted authority and can lead to being de-kitted and decamped from the orientation exercise.</p>
+
+      <h2 id="absenteeism">6. Chronic Absenteeism from CDS Meetings</h2>
+      <p><strong>Why it happens:</strong> Some members prioritize private business or side hustles over their weekly Community Development Service (CDS) obligations.</p>
+      <p><strong>How to avoid it:</strong> Dedicate the required one day a week (Thursdays or Fridays) to your group CDS. Missing two consecutive weeks without a valid excuse will prevent you from being cleared for your monthly allowance.</p>
+
+      <h2 id="biometric-clearance">7. Failure to Perform Monthly Biometric Clearance</h2>
+      <p><strong>Why it happens:</strong> Negligence or traveling outside the Local Government Area during the scheduled clearance period.</p>
+      <p><strong>How to avoid it:</strong> Participate in the mandatory monthly biometric and physical clearance at your LGA office. Failure to do so results in your monthly allowance being withheld for that period.</p>
+
+      <h2 id="politics">8. Involvement in Local or National Politics</h2>
+      <p><strong>Why it happens:</strong> Members may be tempted by local political figures in their host communities to participate in partisan activities.</p>
+      <p><strong>How to avoid it:</strong> Maintain strict neutrality as a corps member. Engaging in political activities is strictly prohibited and can lead to immediate expulsion from the scheme.</p>
+
+      <h2 id="academic-defense">9. Inability to Defend Academic Qualifications</h2>
+      <p><strong>Why it happens:</strong> Graduates of poor-quality "miracle centers" or unaccredited foreign schools may be mobilized but cannot communicate effectively in English.</p>
+      <p><strong>How to avoid it:</strong> If you are reasonably suspected of possessing a fake certificate, you will be subjected to physical verification and scrutiny. The NYSC has a policy to de-kit and prosecute any member who cannot defend their degree.</p>
+
+      <h2 id="data-discrepancies">10. Discrepancies in Graduation and Personal Data</h2>
+      <p><strong>Why it happens:</strong> Institutional errors or deliberate attempts to align graduation dates with mobilization windows.</p>
+      <p><strong>How to avoid it:</strong> Carefully cross-check the data on your Call-up Letter against your Statement of Results. If there is a disparity, do not attempt to register with it; contact your institution's Student Affairs Officer (SAO) for correction before reporting to camp.</p>
     `
   },
   {
@@ -445,7 +536,7 @@ export const MOCK_ARTICLES: Article[] = [
       <ul>
         <li><strong>White Sportswear:</strong> White round-neck T-shirts and white shorts are the mandatory daily uniform.</li>
         <li><strong>White Canvas and Socks:</strong> Essential for parades and physical training.</li>
-        <li><strong>Waist Pouch:</strong> Highly recommended for keeping your phone, ID card, and cash secure while on the parade ground.</li>
+        <li><strong>Wait Pouch:</strong> Highly recommended for keeping your phone, ID card, and cash secure while on the parade ground.</li>
       </ul>
       <div class="callout warning-box">
         <p><strong>Strict Prohibitions:</strong> Do not pack items intended to <strong>alter the uniform</strong>, such as tools to create "slim-fit" styles, crop tops, or skirts for drills, as these are prohibited and can lead to being de-kitted.</p>
@@ -516,17 +607,151 @@ export const MOCK_ARTICLES: Article[] = [
     `
   },
   {
+    id: 'a10',
+    slug: 'how-to-save-allawee',
+    title: 'The Smart Corper’s Guide to Saving your Allowance',
+    category: 'Finance',
+    readTime: '6 min',
+    riskLevel: 'Low',
+    views: 9100,
+    lastVerifiedDate: new Date('2024-02-15'),
+    source: 'Financial Literacy for Youth Directives & NYSC Official Manuals',
+    excerpt: 'Learn how to view your ₦77,000 monthly allowance as seed capital and master the financial discipline required for life after NYSC.',
+    body: `
+      <p>To maximize your financial standing during the service year, you must view your <strong>₦77,000 monthly federal allowance</strong> not just as a stipend for living expenses, but as potential <strong>seed capital</strong> for your future.</p>
+
+      <h2 id="financial-discipline">1. Mastering Financial Discipline</h2>
+      <ul>
+        <li><strong>Rudiments of Management:</strong> Success begins with embracing the <strong>rudiments of financial discipline</strong> and management to actively avoid "recklessness and wastages".</li>
+        <li><strong>Developing a Budget:</strong> You are encouraged to <strong>develop a personal budget</strong> to learn how to live strictly within your income.</li>
+        <li><strong>Necessity as a Teacher:</strong> Distant postings away from home often force "smart corpers" to adapt to low-budget living, which serves as a practical lesson in <strong>financial management</strong>.</li>
+      </ul>
+
+      <h2 id="startup-fund">2. Saving for Your Post-Service Business</h2>
+      <ul>
+        <li><strong>The Startup Fund:</strong> The NYSC officially encourages you to <strong>save a portion of your monthly stipends</strong> specifically to raise capital for an enterprise after your service year.</li>
+        <li><strong>The SAED Connection:</strong> These savings are intended to fund the implementation of vocational skills acquired through the <strong>Skill Acquisition and Entrepreneurship Development (SAED)</strong> programme.</li>
+        <li><strong>Foundational Capital:</strong> While the allowance may seem "meager," saving it consistently creates a <strong>financial foundation</strong> that can later be supplemented by soft or interest-free loans from partners like the <strong>Bank of Industry (BOI)</strong> or the <strong>Central Bank of Nigeria (CBN)</strong>.</li>
+      </ul>
+
+      <h2 id="supplemental-income">3. Generating Supplemental Income</h2>
+      <ul>
+        <li><strong>Monetizing Soft Skills:</strong> You can increase your savings potential by <strong>monetizing skills learned during orientation</strong>, such as professional CV writing or digital skills, and offering these services to other corps members.</li>
+        <li><strong>Ventures Training:</strong> Participating in <strong>NYSC Ventures</strong> allows you to learn revenue-generating trades without paying training fees, often providing small upkeep stipends that further boost your ability to save.</li>
+      </ul>
+
+      <h2 id="protect-savings">4. Protecting Your Savings from CDS Projects</h2>
+      <ul>
+        <li><strong>Prohibition on Personal Funding:</strong> A critical rule for high-performing corpers is that you are <strong>strictly prohibited from using your personal money</strong> to fund Community Development Service (CDS) projects.</li>
+        <li><strong>Resource Mobilization:</strong> Instead of spending your "minor income," you must act as a facilitator to <strong>mobilize funds from community stakeholders</strong> and sponsors.</li>
+        <li><strong>Preserving Viability:</strong> Using your own allowance to fund a project is considered a <strong>violation of the project's viability</strong> and should be avoided to protect your personal savings.</li>
+      </ul>
+    `
+  },
+  {
+    id: 'a12',
+    slug: 'passing-out-process-checklist',
+    title: 'The Ultimate Passing Out Process (POP) Checklist',
+    category: 'Clearance',
+    readTime: '15 min',
+    riskLevel: 'High',
+    views: 12450,
+    lastVerifiedDate: new Date('2024-01-20'),
+    source: 'NYSC Official Exit Guidelines & WUP Protocols',
+    excerpt: 'Everything you need to do in your 11th month to ensure you get your discharge certificate on the final day.',
+    body: `
+      <p>The <strong>Winding-Up and Passing-Out (WUP/POP)</strong> exercise is the fourth and final cardinal phase of the NYSC service year. It is designed as a transitional period where corps members reassemble to share experiences, reappraise the service year, and prepare for entry into the labor market.</p>
+      
+      <h2 id="ppa-clearance">1. PPA Clearance and Release</h2>
+      <ul>
+        <li><strong>Satisfactory Completion:</strong> You must fulfill your 11 months of professional duties at your Place of Primary Assignment (PPA).</li>
+        <li><strong>Final Clearance Letter:</strong> Obtain a formal <strong>final clearance letter</strong> from your employer confirming your productivity and satisfactory conduct.</li>
+        <li><strong>Official Release:</strong> Ensure your employer formally releases you to participate in the scheduled winding-up activities.</li>
+      </ul>
+
+      <h2 id="cds-clearance">2. CDS Clearance and Evaluation</h2>
+      <ul>
+        <li><strong>Schedule Officer Approval:</strong> You must be cleared by your <strong>CDS Schedule Officer</strong>, verifying that you met all weekly meeting attendance and project participation requirements.</li>
+        <li><strong>Resolution of Sanctions:</strong> Ensure you have no outstanding disciplinary issues. Missing CDS meetings for two consecutive weeks in any month can lead to a missed monthly clearance, which may delay your passing out.</li>
+        <li><strong>Performance Reports:</strong> Submit all required evaluation forms, such as <strong>Form 4B (opinion survey)</strong>, which is used by the Planning, Research and Statistics (PRS) department to appraise the service year.</li>
+      </ul>
+
+      <h2 id="admin-doc">3. Administrative Documentation</h2>
+      <ul>
+        <li><strong>LGI Verification:</strong> Submit your PPA and CDS clearances to your <strong>Local Government Inspector (LGI)</strong> for final administrative processing.</li>
+        <li><strong>Tracking Abscondment:</strong> The NYSC uses biometric data to track abscondees; ensure all your monthly clearances were successfully captured to avoid being flagged as having absconded.</li>
+        <li><strong>Identity Card:</strong> Ensure you have your NYSC ID card; if lost, it must be reported and resolved before final clearance.</li>
+      </ul>
+
+      <h2 id="ceremonial">4. Ceremonial Preparation and Dress Code</h2>
+      <ul>
+        <li><strong>Attendance:</strong> Reassemble at the designated venue (often the state capital) for the closing ceremony and debriefing.</li>
+        <li><strong>Dress Code (6/7):</strong> You must be fully kitted in the <strong>official 6/7 uniform</strong>, which includes:
+          <ul>
+            <li>Khaki trousers and crested vest (tucked in).</li>
+            <li>NYSC belt and face cap.</li>
+            <li>Zebra-striped socks and jungle boots.</li>
+          </ul>
+        </li>
+        <li><strong>Prohibitions:</strong> You are strictly forbidden from wearing <strong>skin-tight "slim-fit" khakis</strong>, skirts, or non-regulation footwear (slippers or cover shoes) during the parade.</li>
+      </ul>
+
+      <h2 id="collection">5. Certificate Collection</h2>
+      <ul>
+        <li><strong>Personal Collection:</strong> You must collect your Certificate of National Service <strong>in person</strong> at the state secretariat or designated distribution point; collection by <strong>proxy is strictly prohibited</strong>.</li>
+        <li><strong>Verification of Details:</strong> Certificates now include your <strong>Date of Birth and Course of Study</strong> to prevent forgery. Verify that these details are correct upon receipt.</li>
+        <li><strong>Legal Importance:</strong> Guard this document carefully, as employers are statutorily required to demand it before offering you employment.</li>
+      </ul>
+    `
+  },
+  {
     id: 'a5',
     slug: 'nysc-medical-report-guide',
     title: 'The Comprehensive Guide to NYSC Medical Reports',
     category: 'Mobilization',
-    readTime: '9 min',
+    readTime: '12 min',
     riskLevel: 'High',
     views: 4210,
-    lastVerifiedDate: new Date('2024-05-15'),
-    source: 'NYSC Medical Directives 2024',
-    excerpt: 'Avoid rejection at the camp gate. Learn which hospitals are recognized, what tests are mandatory, and how to verify your report.',
-    body: `<h2>Recognized Institutions</h2><p>Only reports from Government-owned hospitals (Federal, State, or General) and Military/Police hospitals are valid. Private hospital reports are strictly rejected.</p><h2>Mandatory Tests</h2><ul><li>Genotype and Blood Group</li><li>Chest X-ray</li><li>Urinalysis</li><li>HIV/Hepatitis Status</li></ul>`
+    lastVerifiedDate: new Date('2024-06-22'),
+    source: 'NYSC Medical Directives & Official Protocol',
+    excerpt: 'Essential instruments for fitness determination and concessional deployment. Learn mandatory requirements, authorized issuers, and the legal risks of fraud.',
+    body: `
+      <p>For every prospective corps member (PCM), medical reports are essential instruments used to determine physical fitness for the 21-day orientation course or to justify <strong>concessional deployment</strong> due to serious health challenges.</p>
+
+      <h2 id="mandatory-cert">1. The Mandatory Medical Certificate of Fitness</h2>
+      <p>Every PCM must present a <strong>Medical Certificate of Fitness</strong> as a non-negotiable requirement for registration at the orientation camp.</p>
+      <ul>
+        <li><strong>Authorized Issuers:</strong> This report must be obtained from a <strong>Government or Military hospital</strong>.</li>
+        <li><strong>Verification Standards:</strong> To be valid, the certificate must be <strong>stamped, signed, and recent</strong>.</li>
+        <li><strong>Purpose:</strong> This document confirms that the PCM is capable of participating in the regimented physical activities of the camp, such as drills, parades, and sports.</li>
+      </ul>
+
+      <h2 id="concessional-reports">2. Medical Reports for Concessional Deployment</h2>
+      <p>PCMs with chronic or life-threatening health conditions can apply for <strong>concessional deployment</strong> (also known as relocation on health grounds) to serve in states where they can easily access specialized care.</p>
+      <ul>
+        <li><strong>True Health Status:</strong> It is mandatory for PCMs to indicate their <strong>true health status</strong> during online registration to facilitate proper planning and minimize undue stress.</li>
+        <li><strong>Required Documentation:</strong> Applications must include a <strong>medical report from Federal or State General Hospitals</strong>, University Teaching Hospitals, or Military/Mission hospitals.</li>
+        <li><strong>Official Signatories:</strong> The report must be signed by a <strong>Chief Medical Officer, Health Officer, or a Consultant</strong>.</li>
+        <li><strong>Prohibitions:</strong> The NYSC <strong>does not honor medical reports from private hospitals or clinics</strong> for the purpose of concessional posting.</li>
+      </ul>
+
+      <h2 id="fake-reports">3. Integrity and the Crisis of Fake Reports</h2>
+      <p>The NYSC has identified a significant crisis regarding the authenticity of medical documentation.</p>
+      <ul>
+        <li><strong>The "90% Rule":</strong> Management discovered that <strong>over 90% of medical reports</strong> presented during registration are <strong>fake</strong>.</li>
+        <li><strong>Sources of Fraud:</strong> Many fraudulent reports are either produced at <strong>cyber cafés</strong> or emanate from hospitals where unauthorized supporting staff issue them for a fee.</li>
+        <li><strong>Legal Consequences:</strong> Forging medical documents is a serious offense that can lead to <strong>expulsion, prosecution, or the denial of a Certificate of National Service</strong>.</li>
+        <li><strong>Operational Risk:</strong> Fake reports hinder the scheme’s ability to manage members with genuine health problems, potentially putting those members in harm's way during camp activities.</li>
+      </ul>
+
+      <h2 id="healthcare-reimbursements">4. Healthcare and Reimbursements During Service</h2>
+      <p>Once deployed, medical reports continue to play a role in a corps member's welfare.</p>
+      <ul>
+        <li><strong>NHIS Enrollment:</strong> All members are enrolled in the <strong>National Health Insurance Scheme (NHIS)</strong> under the GIFSHIP programme, providing access to free basic medical care throughout the service year.</li>
+        <li><strong>Emergency Protocols:</strong> Corps members with complicated illnesses that cannot be managed at camp clinics must be <strong>relocated immediately</strong> or referred to tertiary health facilities.</li>
+        <li><strong>Medical Refunds:</strong> The NYSC Welfare and Health Services Department processes <strong>medical refunds</strong> for members who incur costs for certified medical interventions. This process requires the submission of <strong>authentic receipts and medical expenses</strong> to the state secretariat.</li>
+      </ul>
+    `
   },
   {
     id: 'a6',
@@ -551,8 +776,36 @@ export const MOCK_ARTICLES: Article[] = [
     views: 7890,
     lastVerifiedDate: new Date('2024-07-10'),
     source: 'NYSC ICT Department Guidelines',
-    excerpt: 'The most important process of every month. Learn how to troubleshoot finger-print failures and what to do if you miss your slot.',
-    body: `<h2>The Clearance Window</h2><p>Biometric clearance typically opens between the 1st and 10th of every month. Ensure your LGI has marked you present at the CDS meeting before attempting biometrics.</p>`
+    excerpt: 'The most important process of every month. Learn mandatory requirements, how capturing works, and the link to your monthly allowance.',
+    body: `
+      <p><strong>Biometric monthly clearance</strong> is a mandatory process implemented by the NYSC to eliminate truancy and "service by proxy". This system serves as a digital verification that a corps member has satisfactorily performed their duties for the month across the cardinal programs of the scheme.</p>
+      <p>The following is everything you need to know about the process and its requirements:</p>
+
+      <h2 id="prerequisite-letters">1. The Prerequisite Clearance Letters</h2>
+      <p>Before a corps member can undergo biometric capturing, they must be cleared by two separate authorities:</p>
+      <ul>
+        <li><strong>Employer Clearance:</strong> Your Place of Primary Assignment (PPA) employer must issue a formal <strong>monthly clearance letter</strong> confirming that you have fulfilled your professional duties.</li>
+        <li><strong>CDS Clearance:</strong> You must also be cleared by your <strong>Community Development Service (CDS) Schedule Officer</strong>. According to the sources, attending weekly CDS meetings is mandatory; <strong>missing these meetings for two consecutive weeks</strong> in a month will result in being denied your monthly clearance.</li>
+      </ul>
+
+      <h2 id="capturing-process">2. The Capturing Process</h2>
+      <ul>
+        <li><strong>Location:</strong> Capturing typically takes place at the <strong>Local Government Area (LGA) office</strong> under the supervision of the Local Government Inspector (LGI).</li>
+        <li><strong>Hardware:</strong> The process utilizes specialized equipment, including laptop computers and <strong>fingerprint scanners</strong> procured by the scheme for this specific purpose.</li>
+        <li><strong>Uniform Protocol:</strong> Corps members must be <strong>fully kitted in the official NYSC uniform</strong> to be eligible for clearance activities. Failure to comply with dress code regulations can lead to disciplinary action or the denial of clearance.</li>
+      </ul>
+
+      <h2 id="allowance-link">3. Link to Monthly Allowances</h2>
+      <p>Completion of the biometric clearance is the <strong>trigger for the payment of your federal allowance</strong>. If a corps member fails to attend or is not cleared, their <strong>allowance will be withheld</strong>. The scheme now uses data from the Integrated System (NIS) to ensure that payments are made only to those who have successfully completed the biometric verification.</p>
+
+      <h2 id="tracking-discipline">4. Tracking and Discipline</h2>
+      <p>The biometric system serves as a "think-tank" for tracking the movement and productivity of members:</p>
+      <ul>
+        <li><strong>Abscondment Tracking:</strong> The system allows for the <strong>efficient tracking of potential abscondees</strong> at the end of each monthly cycle.</li>
+        <li><strong>Real-time Data:</strong> Data is transmitted in real-time from the LGA and State Secretariats to the National Directorate Headquarters (NDHQ) to ensure transparency and accountability.</li>
+        <li><strong>Sanctions:</strong> Those found to be absent from their duty posts without permission are flagged as "absentees" and are subject to <strong>extensions of service</strong> or other punishments as stipulated in the NYSC Bye-Laws.</li>
+      </ul>
+    `
   },
   {
     id: 'a8',
@@ -562,15 +815,51 @@ export const MOCK_ARTICLES: Article[] = [
     readTime: '13 min',
     riskLevel: 'Medium',
     views: 2340,
-    lastVerifiedDate: new Date('2024-04-12'),
-    source: 'NYSC Bye-Laws Section 4',
-    excerpt: 'A specialized guide for female corps members seeking to join their husbands in a different state.',
-    body: `<h2>Required Documents</h2><ul><li>Marriage Certificate (Court or Church/Mosque with Registry stamp)</li><li>Newspaper Change of Name Publication</li><li>Husband's Utility Bill (Proof of Residence)</li><li>Letter from Husband's Employer</li></ul>`
+    lastVerifiedDate: new Date('2024-06-25'),
+    source: 'NYSC Bye-Laws & Official Directives',
+    excerpt: 'A step-by-step guide for married female corps members seeking concessional deployment to their husband\'s state of residence.',
+    body: `
+      <p>Applying for relocation on marital grounds is a specific process within the NYSC scheme designed for <strong>married female prospective corps members (PCMs)</strong> who wish to be deployed to the state where their husbands are domiciled. This is formally referred to as a <strong>concessional deployment</strong> or <strong>concessional posting</strong>.</p>
+      
+      <p>To ensure a successful application, follow these steps and prepare the mandatory documentation:</p>
+
+      <h2 id="timing">1. Timing and Initial Declaration</h2>
+      <ul>
+        <li><strong>During Online Registration:</strong> PCMs are strongly advised to indicate their <strong>true marital status</strong> during the initial online registration process to facilitate concessional deployment from the start.</li>
+        <li><strong>After Deployment:</strong> If you are not originally posted to your husband's state, you cannot redeploy before camp. You must <strong>report to the orientation camp</strong> you were assigned to first, and then apply for relocation through your dashboard while in camp.</li>
+        <li><strong>Compassionate Gesture:</strong> Occasionally, the NYSC allows married women not deployed to their husbands' states to proceed directly to the Orientation Camp in their husband's state of residence for registration.</li>
+      </ul>
+
+      <h2 id="documentation">2. Mandatory Documentation</h2>
+      <p>You must upload or attach the following original documents to your application to justify the concession:</p>
+      <ul>
+        <li><strong>Marriage Certificate:</strong> A valid copy of your official marriage certificate.</li>
+        <li><strong>Evidence of Change of Name:</strong> A newspaper publication confirming your change of name.</li>
+        <li><strong>Letter from Husband’s Employer:</strong> An official letter from the organization where your husband works.</li>
+        <li><strong>Husband’s Identity Document:</strong> A valid means of identification, such as a <strong>National ID Card</strong> or <strong>Driving License</strong>.</li>
+        <li><strong>Evidence of Domicile:</strong> Documentary proof of your husband’s place of residence in the target state.</li>
+      </ul>
+
+      <h2 id="flow">3. Application Flow</h2>
+      <ol>
+        <li><strong>Login:</strong> Access your NYSC portal dashboard using your username and password.</li>
+        <li><strong>Submit Request:</strong> Click on the link for <strong>"Application for Relocation"</strong>.</li>
+        <li><strong>Upload:</strong> Attach the digital copies of the mandatory documents listed above.</li>
+        <li><strong>Verification:</strong> Your request will be reviewed by the <strong>State Coordinator</strong>, who has the authority to approve or disapprove the request.</li>
+        <li><strong>Check Status:</strong> You can monitor the progress of your application by checking the <strong>"Relocation Status"</strong> on your dashboard. Approval usually takes a few weeks.</li>
+      </ol>
+
+      <h2 id="guarantees">4. Guarantees and Constraints</h2>
+      <ul>
+        <li><strong>Guaranteed Posting:</strong> Inter-state posting is <strong>guaranteed for married women</strong>, provided they provide all valid marriage documents.</li>
+        <li><strong>Award Disqualification:</strong> It is important to note that corps members posted or relocated on concessional grounds are <strong>automatically disqualified</strong> from being selected for the <strong>State or President’s Honours Award</strong>.</li>
+      </ul>
+    `
   },
   {
     id: 'a9',
     slug: 'saed-skills-worth-learning',
-    title: 'Top 5 SAED Skills that actually make money in 2024',
+    title: 'Top 5 SAED Skills that actually make money in 2026',
     category: 'General',
     readTime: '8 min',
     riskLevel: 'Low',
@@ -578,20 +867,45 @@ export const MOCK_ARTICLES: Article[] = [
     lastVerifiedDate: new Date('2024-03-20'),
     source: 'NYSC SAED Department Report',
     excerpt: 'Don’t just attend the lectures. Choose a skill that has high market demand in the Nigerian freelance economy.',
-    body: `<h2>In-Demand Skills</h2><ol><li>Digital Marketing & Content Creation</li><li>Agro-Allied Ventures (Snail/Poultry)</li><li>Solar Panel Installation</li><li>Fashion & Textile Design</li><li>Graphic Design & UI/UX</li></ol>`
-  },
-  {
-    id: 'a10',
-    slug: 'how-to-save-allawee',
-    title: 'The Smart Corper’s Guide to Saving your Allowance',
-    category: 'General',
-    readTime: '6 min',
-    riskLevel: 'Low',
-    views: 9100,
-    lastVerifiedDate: new Date('2024-02-15'),
-    source: 'Financial Literacy for Youth Directives',
-    excerpt: 'Learn how to survive on the ₦77k allowance while building a small capital for post-NYSC life.',
-    body: `<h2>The 50/30/20 Rule for Corpers</h2><p>50% for feeding/rent, 30% for miscellaneous/transport, and 20% for your post-service savings account.</p>`
+    body: `
+      <p>Based on the sources, the Skill Acquisition and Entrepreneurship Development (SAED) programme is designed to shift the mindset of graduates from being "job seekers" to "job creators". While the sources reflect data and trends up to the 2023–2025 strategic window, they highlight several high-growth sectors that are positioned to be highly profitable moving into 2026.</p>
+      <p>Here are the top 5 SAED skill areas that show the most significant potential for income generation:</p>
+
+      <h2 id="ict-digital">1. Information and Communication Technology (ICT) and Digital Skills</h2>
+      <p>The sources place heavy emphasis on the "ICT revolution" and the "emerging digital economy" as the future of work.</p>
+      <ul>
+        <li><strong>Profitable Sub-skills:</strong> Data Science, Product Management, Back-end and Front-end Software Development, and Digital Marketing.</li>
+        <li><strong>Revenue Potential:</strong> ICT has the potential to power business innovation centers and improve the efficiency of all other industries. Graduates are already establishing themselves as "Digital Economy Ambassadors" who provide high-demand services to large corporations.</li>
+      </ul>
+
+      <h2 id="agropreneurship">2. Agropreneurship (Specifically Fish and Poultry Farming)</h2>
+      <p>Agriculture is identified as the largest employer of labor in Nigeria and a vital contributor to wealth creation.</p>
+      <ul>
+        <li><strong>Profitable Sub-skills:</strong> Fish farming (catfish and tilapia) and poultry production.</li>
+        <li><strong>Revenue Potential:</strong> Local demand for fish and poultry far outstrips supply, meaning agropreneurs can tap into a massive, consistent market. These sectors are also highly supported by <strong>interest-free loans</strong> from the Bank of Industry (BOI) and the Central Bank of Nigeria (CBN).</li>
+      </ul>
+
+      <h2 id="fashion">3. Fashion Design and High-End Tailoring</h2>
+      <p>The fashion industry has experienced a "boom" driven by high demand for quality, locally-tailored embroidered fabrics.</p>
+      <ul>
+        <li><strong>Profitable Sub-skills:</strong> Pattern cutting, embroidery, and apparel production.</li>
+        <li><strong>Revenue Potential:</strong> Successful alumni report that this sector is highly lucrative because "no government body" can match the monthly income generated by a private fashion venture. Premium tailoring for prominent clients allows for significant profit margins.</li>
+      </ul>
+
+      <h2 id="cosmetology">4. Cosmetology and Organic Skincare Production</h2>
+      <p>There is a growing shift toward natural, organic skincare products in Nigeria as safe alternatives to chemical-based products.</p>
+      <ul>
+        <li><strong>Profitable Sub-skills:</strong> Production of liquid soaps, detergents, and natural organic oils.</li>
+        <li><strong>Revenue Potential:</strong> This sector is driven by high demand for daily-use consumables. The make-up industry specifically soars during events like weddings and birthdays, where artists can charge substantial fees for just a few days of work.</li>
+      </ul>
+
+      <h2 id="food-processing">5. Food Processing (Bakeries and Confectionaries)</h2>
+      <p>Food processing is prioritized because "people have to eat," and the lifestyle shift toward busy urban schedules has increased the demand for ready-made meals and snacks.</p>
+      <ul>
+        <li><strong>Profitable Sub-skills:</strong> Professional baking, catering, and water bottling.</li>
+        <li><strong>Revenue Potential:</strong> The NYSC has proven the profitability of this model through its own ventures; its bread and table water factories generate millions in revenue by supplying camps and the general public.</li>
+      </ul>
+    `
   },
   {
     id: 'a11',
@@ -604,20 +918,43 @@ export const MOCK_ARTICLES: Article[] = [
     lastVerifiedDate: new Date('2024-08-05'),
     source: 'NYSC Discipline & Drills Manual',
     excerpt: 'A guide to proper kitting. Learn why "slim-fitting" your khakis can get you into trouble with camp soldiers.',
-    body: `<h2 id="khaki">Proper Khaki Dressing</h2><p>The khaki jacket must be tucked in during official ceremonies. The crest must be centered above the left breast pocket.</p>`
-  },
-  {
-    id: 'a12',
-    slug: 'passing-out-process-checklist',
-    title: 'The Ultimate Passing Out Process (POP) Checklist',
-    category: 'Clearance',
-    readTime: '15 min',
-    riskLevel: 'High',
-    views: 12450,
-    lastVerifiedDate: new Date('2024-01-20'),
-    source: 'NYSC Official Exit Guidelines',
-    excerpt: 'Everything you need to do in your 11th month to ensure you get your discharge certificate on the final day.',
-    body: `<h2>Final Clearance Steps</h2><p>Ensure your PPA boss has signed your final clearance letter and your CDS card is fully signed for all 11 months.</p>`
+    body: `
+      <p>Adhering to <strong>NYSC uniform protocols</strong> is not merely about fashion; it is a strict requirement designed to instill discipline, promote national unity, and ensure that every corps member is treated as an equal regardless of their background. Violating these protocols often leads to <strong>sanctions, being sent back from activities, or even being de-kitted</strong>, which effectively forces you into "double drills" of administrative hurdles and wasted time.</p>
+      
+      <p>To avoid these unnecessary complications, follow these strict kitting guidelines:</p>
+
+      <h2 id="no-alterations">1. Zero Tolerance for Alterations</h2>
+      <p>The most common cause for sanction is the unauthorized modification of the uniform.</p>
+      <ul>
+        <li><strong>No "Slim-Fitting":</strong> You are strictly forbidden from altering your khaki trousers or shirts into <strong>"slim-fit" styles, crop tops, or three-quarter shorts</strong>.</li>
+        <li><strong>Tailoring Limits:</strong> While you may adjust over-sized uniforms for a better fit, camp tailors are warned to observe <strong>prescribed limits</strong> or risk being sanctioned themselves.</li>
+        <li><strong>Decency Requirements:</strong> Reshaping trousers to be skin-tight is considered an <strong>"affront to decency"</strong> and can lead to being decamped.</li>
+      </ul>
+
+      <h2 id="event-protocols">2. Event-Specific Protocols</h2>
+      <p>Wearing the wrong combination for a specific event will result in your being barred from participation.</p>
+      <ul>
+        <li><strong>The 6/7 Look (Ceremonial):</strong> For Swearing-in and Passing-Out Parades, you must wear the <strong>NYSC face cap, crested vest (tucked in), belt, khaki trousers, zebra-striped socks, and jungle boots</strong>.</li>
+        <li><strong>The 7/7 Look (Drills):</strong> The complete uniform (adding the khaki shirt) is typically required for <strong>Man O’ War activities and endurance treks</strong>.</li>
+        <li><strong>Daily Camp Wear:</strong> The standard is <strong>white shorts, white round-neck T-shirts, white socks, and white canvas</strong>. You must wear your <strong>state tag</strong> at all times.</li>
+        <li><strong>CDS Days:</strong> You must be <strong>fully kitted</strong> in the official 6/7 or 7/7 uniform to attend weekly meetings; those in slippers, mufti, or altered uniforms are often <strong>sent home and denied monthly clearance</strong>.</li>
+      </ul>
+
+      <h2 id="religious-accoutrements">3. Religious and Professional Accoutrements</h2>
+      <p>The NYSC allows for specific religious items, but they must follow strict dimensions to avoid being labeled as "wrong dressing".</p>
+      <ul>
+        <li><strong>Hijabs and Veils:</strong> Muslim female corps members may wear a <strong>white, shoulder-length hijab</strong>, which must be tucked into the uniform. Catholic reverend sisters are permitted veils of the <strong>same length</strong>.</li>
+        <li><strong>Skirts and Gowns:</strong> The use of skirts or gowns during orientation camp drills is <strong>not acceptable</strong> and has previously led to members being de-kitted.</li>
+        <li><strong>The Face Cap:</strong> Must be worn <strong>facing forward</strong> at all times, except during specific Man O’ War maneuvers.</li>
+      </ul>
+
+      <h2 id="id-docs">4. Documentation and Identification</h2>
+      <p>Improper identification is an administrative "drill" you want to avoid.</p>
+      <ul>
+        <li><strong>Identity Cards:</strong> You must carry your <strong>NYSC ID card</strong> at all times; losing it requires an immediate report and application for a replacement to avoid disciplinary issues.</li>
+        <li><strong>Face Masks:</strong> Use of a face mask remains <strong>mandatory</strong> during all camp activities to comply with safety protocols.</li>
+      </ul>
+    `
   }
 ];
 
